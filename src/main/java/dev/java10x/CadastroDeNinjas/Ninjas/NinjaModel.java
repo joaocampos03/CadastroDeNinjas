@@ -30,7 +30,7 @@ public class NinjaModel {
     @Column(name = "idade")
     private int idade;
 
-    @ManyToMany
+    @ManyToOne
     @JoinColumn(name = "missoes_id") //Foreign key ou chave estrangeira
     private MissoesModel missoes;
 }
